@@ -11,6 +11,35 @@ pub mod sprites {
 }
 
 pub fn main() {
+    // // TODO: remove this is WIP
+    // {
+    //     use bevy_mod_aseprite::MyDerive;
+
+    //     #[derive(MyDerive)]
+    //     #[aseprite(file = "player.ase")]
+    //     struct Foo;
+
+    //     let a = Foo;
+    //     assert_eq!(Foo::derived_name(), "hello");
+
+    //     pub struct Player;
+    //     impl Player {
+    //         pub const PATH: &'static str = "player.ase";
+    //     }
+
+    //     pub struct PlayerTags;
+    //     impl PlayerTags {
+    //         pub const DIE: &'static str = "die";
+    //         pub const STAND: &'static str = "stand";
+    //         pub const ATTACK: &'static str = "attack";
+    //         pub const FALL: &'static str = "fall";
+    //         pub const JUMP: &'static str = "jump";
+    //         pub const DASH: &'static str = "dash";
+    //         pub const WOUND: &'static str = "wound";
+    //         pub const MOVE: &'static str = "move";
+    //     }
+    // }
+
     App::new()
         .add_plugins(DefaultPlugins.set(ImagePlugin::default_nearest()))
         .add_plugins(AsepritePlugin)
